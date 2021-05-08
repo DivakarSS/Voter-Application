@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Voting App</string>
+    <string name="terms">TERMS AND CONDITIONS</string>
+    <string name="adminlogin">Admin Login</string>
+    <string name="remember">Remember me</string>
+    <string name="adminid">Admin Id</string>
+    <string name="para">Voting rights are the most important element of the electoral system. This is one of the fundamental political rights of citizens. A distinction is made between ACTIVE and PASSIVE voting rights.
+
+Active voting rights relate to the circle of people who have the right to elect representative bodies, while the passive voting rights relate to the circle of people who have the right to be elected to such bodies.
+
+The right to vote is universal and equal, meaning that it is the right of every citizen that has reached 18 years of age to vote and be elected regardless of class, ethnic, racial, economic or other affiliation. The law may determine under what conditions aliens also have voting rights.
+
+Voting rights are regulated in detail by the National Assembly Elections Act.  The voting rights of members of the Italian and Hungarian ethnic communities is specially regulated for the election of deputies from those ethnic communities, since only members of the communities – and not citizens – have the right to vote and stand for election as deputies of the Italian and Hungarian communities.
+
+There are direct voting rights and indirect voting rights. When voters vote without any intermediary for members of a representative body, we may speak of direct voting rights. On the other hand, when voters merely select electors or an electoral college which then elects members of a representative body, we speak of indirect voting rights.</string>
+    <string name="quotes1">Stay Home!</string>
+    <string name="quotes2">Stay Safe!</string>
+    <string name="create_voter">Create Voter</string>
+    <string name="count">Count Vote</string>
+
+</resources>
