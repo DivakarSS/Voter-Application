@@ -29,7 +29,7 @@ public class Home extends AppCompatActivity {
     TextInputEditText voterid_text,password_text;
     TextInputLayout voterid_layout,password_layout;
     Button login;
-
+    String logined_id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -103,10 +103,11 @@ public class Home extends AppCompatActivity {
         String id = voterid_layout.getEditText().getText().toString().trim();
         String password = password_layout.getEditText().getText().toString().trim();
         Query checkVoter = FirebaseDatabase.getInstance().getReference("Votersdb").orderByChild("voter_Id").equalTo(id);
-
+        logined_id = id;
         checkVoter.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull  DataSnapshot snapshot) {
+
                 if(snapshot.exists())
                 {
                     voterid_layout.setError(null);
@@ -118,6 +119,7 @@ public class Home extends AppCompatActivity {
                         password_layout.setErrorEnabled(false);
 
                         Intent intent = new Intent(Home.this,Votebuzzer.class);
+                        intent.putExtra("Voter_ID",logined_id);
                         startActivity(intent);
                     }
                     else{

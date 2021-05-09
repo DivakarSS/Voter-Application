@@ -17,5 +17,6 @@ There are direct voting rights and indirect voting rights. When voters vote with
     <string name="quotes2">Stay Safe!</string>
     <string name="create_voter">Create Voter</string>
     <string name="count">Count Vote</string>
-
+    <string name="vote">Vote</string>
+    <string name="aadarvalidation">Aadhar Validation</string>
 </resources>
