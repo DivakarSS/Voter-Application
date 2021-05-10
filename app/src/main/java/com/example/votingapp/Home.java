@@ -50,7 +50,7 @@ public class Home extends AppCompatActivity {
         voterid_text = findViewById(R.id.voterid_edittext);
         password_text = findViewById(R.id.password_edittext);
 
-        SharedPreferences preferences = getSharedPreferences("checkbox",MODE_PRIVATE);
+        SharedPreferences preferences = getSharedPreferences("check",MODE_PRIVATE);
         String checkbox = preferences.getString("remember","");
         if(checkbox.equals("true"))
         {
@@ -65,7 +65,7 @@ public class Home extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(buttonView.isChecked()){
-                    SharedPreferences preferences = getSharedPreferences("checkbox",MODE_PRIVATE);
+                    SharedPreferences preferences = getSharedPreferences("check",MODE_PRIVATE);
                     SharedPreferences.Editor editor  = preferences.edit();
                     editor.putString("remember","true");
                     editor.apply();
@@ -73,7 +73,7 @@ public class Home extends AppCompatActivity {
                 }
                 else if(!buttonView.isChecked())
                 {
-                    SharedPreferences preferences = getSharedPreferences("checkbox",MODE_PRIVATE);
+                    SharedPreferences preferences = getSharedPreferences("check",MODE_PRIVATE);
                     SharedPreferences.Editor editor  = preferences.edit();
                     editor.putString("remember","false");
                     editor.apply();

@@ -33,11 +33,10 @@ public class Votebuzzer extends AppCompatActivity {
         signout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDialog();
+               Intent intent1 = new Intent(Votebuzzer.this,Validate_signout.class);
+               startActivity(intent1);
             }
         });
     }
-    public void openDialog(){
 
-    }
 }

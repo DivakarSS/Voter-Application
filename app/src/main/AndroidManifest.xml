@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VotingApp">
-        <activity android:name=".Vote_poling"></activity>
+        <activity android:name=".Validate_signout"></activity>
+        <activity android:name=".Vote_poling" />
         <activity android:name=".Fingerprint_validation" />
         <activity android:name=".Aadhar_validation" />
         <activity android:name=".Votebuzzer" />
