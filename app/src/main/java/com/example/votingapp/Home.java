@@ -4,9 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,6 +32,7 @@ public class Home extends AppCompatActivity {
     TextInputEditText voterid_text,password_text;
     TextInputLayout voterid_layout,password_layout;
     Button login;
+    CheckBox remember_me;
     String logined_id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,12 +43,44 @@ public class Home extends AppCompatActivity {
         admin_login = findViewById(R.id.admin);
         terms = findViewById(R.id.textView4);
         login = findViewById(R.id.button);
-
+        remember_me = findViewById(R.id.checkBox);
         voterid_layout = findViewById(R.id.voterid_layout);
         password_layout = findViewById(R.id.password_layout);
 
         voterid_text = findViewById(R.id.voterid_edittext);
         password_text = findViewById(R.id.password_edittext);
+
+        SharedPreferences preferences = getSharedPreferences("checkbox",MODE_PRIVATE);
+        String checkbox = preferences.getString("remember","");
+        if(checkbox.equals("true"))
+        {
+            Intent intent = new Intent(Home.this,Votebuzzer.class );
+            startActivity(intent);
+        }else if(checkbox.equals("false"))
+        {
+            Toast.makeText(this, "Please sign in", Toast.LENGTH_SHORT).show();
+        }
+
+        remember_me.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(buttonView.isChecked()){
+                    SharedPreferences preferences = getSharedPreferences("checkbox",MODE_PRIVATE);
+                    SharedPreferences.Editor editor  = preferences.edit();
+                    editor.putString("remember","true");
+                    editor.apply();
+                    Toast.makeText(Home.this, "Checked", Toast.LENGTH_SHORT).show();
+                }
+                else if(!buttonView.isChecked())
+                {
+                    SharedPreferences preferences = getSharedPreferences("checkbox",MODE_PRIVATE);
+                    SharedPreferences.Editor editor  = preferences.edit();
+                    editor.putString("remember","false");
+                    editor.apply();
+                    Toast.makeText(Home.this, "Unchecked", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
         admin_login.setOnClickListener(new View.OnClickListener() {
             @Override

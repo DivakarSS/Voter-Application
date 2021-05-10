@@ -7,8 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class Votebuzzer extends AppCompatActivity {
     Button buzzer;
+    FloatingActionButton signout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +20,7 @@ public class Votebuzzer extends AppCompatActivity {
         buzzer = findViewById(R.id.button2);
         Intent intent = getIntent();
         String Logined_Id = intent.getStringExtra("Voter_ID");
+        signout = findViewById(R.id.floatingActionButton);
         buzzer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,5 +29,15 @@ public class Votebuzzer extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        signout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDialog();
+            }
+        });
+    }
+    public void openDialog(){
+
     }
 }
