@@ -30,7 +30,7 @@ public class Fingerprint_validation extends AppCompatActivity {
        BiometricManager biometricManager = BiometricManager.from(this);
        switch (biometricManager.canAuthenticate()){
            case BiometricManager.BIOMETRIC_SUCCESS:
-               msg_txt.setText("You can use the fingerprint sensor to login");
+               msg_txt.setText("You can use the fingerprint sensor to put an vote");
                msg_txt.setTextColor(Color.parseColor("#EB042A"));
                break;
            case BiometricManager.BIOMETRIC_ERROR_NO_HARDWARE:
@@ -58,7 +58,7 @@ public class Fingerprint_validation extends AppCompatActivity {
             @Override
             public void onAuthenticationSucceeded(@NonNull BiometricPrompt.AuthenticationResult result) {
                 super.onAuthenticationSucceeded(result);
-                Toast.makeText(Fingerprint_validation.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Fingerprint_validation.this, "Validation Successful", Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(Fingerprint_validation.this,Vote_poling.class);
                 startActivity(intent);
