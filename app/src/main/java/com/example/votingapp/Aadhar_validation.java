@@ -102,7 +102,7 @@ public class Aadhar_validation extends AppCompatActivity {
                             aadhar_layout.setError(null);
                             aadhar_layout.setErrorEnabled(false);
 
-                            Intent intent = new Intent(Aadhar_validation.this,Votebuzzer.class);
+                            Intent intent = new Intent(Aadhar_validation.this,Fingerprint_validation.class);
                             startActivity(intent);
                         }
                         else{

@@ -3,6 +3,7 @@
     package="com.example.votingapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VotingApp">
-        <activity android:name=".Aadhar_validation"></activity>
+        <activity android:name=".Vote_poling"></activity>
+        <activity android:name=".Fingerprint_validation" />
+        <activity android:name=".Aadhar_validation" />
         <activity android:name=".Votebuzzer" />
         <activity android:name=".Create" />
         <activity android:name=".Admin_page" />
