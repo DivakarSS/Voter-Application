@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,6 +27,7 @@ public class Aadhar_validation extends AppCompatActivity {
             Pattern.compile("^([a-zA-Z]){3}([0-9]){7}?$");
     TextInputEditText voterid_text,aadhar_text;
     TextInputLayout voterid_layout,aadhar_layout;
+   
     Button validate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +87,8 @@ public class Aadhar_validation extends AppCompatActivity {
         String voterid = voterid_layout.getEditText().getText().toString().trim();
         String aadhar_no = aadhar_layout.getEditText().getText().toString().trim();
         Intent log = getIntent();
+
+
         String Logined_Id = log.getStringExtra("Voter_ID");
         Query checkAadhar = FirebaseDatabase.getInstance().getReference("Votersdb").orderByChild("voter_Id").equalTo(voterid);
         checkAadhar.addListenerForSingleValueEvent(new ValueEventListener() {

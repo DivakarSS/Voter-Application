@@ -55,6 +55,9 @@ public class Home extends AppCompatActivity {
         if(checkbox.equals("true"))
         {
             Intent intent = new Intent(Home.this,Votebuzzer.class );
+            SharedPreferences sharedPreferences = getSharedPreferences("remember",MODE_PRIVATE);
+
+
             startActivity(intent);
         }else if(checkbox.equals("false"))
         {
@@ -68,6 +71,7 @@ public class Home extends AppCompatActivity {
                     SharedPreferences preferences = getSharedPreferences("check",MODE_PRIVATE);
                     SharedPreferences.Editor editor  = preferences.edit();
                     editor.putString("remember","true");
+
                     editor.apply();
                     Toast.makeText(Home.this, "Checked", Toast.LENGTH_SHORT).show();
                 }
@@ -81,6 +85,7 @@ public class Home extends AppCompatActivity {
                 }
             }
         });
+
 
         admin_login.setOnClickListener(new View.OnClickListener() {
             @Override
