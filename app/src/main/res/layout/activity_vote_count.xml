@@ -67,7 +67,10 @@
                 android:layout_height="50dp"
                 android:layout_marginLeft="200dp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/custom_button">
+                android:gravity="center"
+                android:textColor="@color/orange"
+                android:textSize="26dp"
+                android:textStyle="bold">
 
             </TextView>
 
@@ -104,7 +107,10 @@
                 android:layout_height="50dp"
                 android:layout_marginLeft="200dp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/custom_button">
+                android:textColor="@color/orange"
+                android:textSize="26dp"
+                android:gravity="center"
+                android:textStyle="bold">
 
             </TextView>
 
@@ -141,7 +147,10 @@
                 android:layout_height="50dp"
                 android:layout_marginLeft="200dp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/custom_button">
+                android:textColor="@color/orange"
+                android:textSize="26dp"
+                android:gravity="center"
+                android:textStyle="bold">
 
             </TextView>
 
@@ -178,7 +187,10 @@
                 android:layout_height="50dp"
                 android:layout_marginLeft="200dp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/custom_button">
+                android:textColor="@color/orange"
+                android:textSize="26dp"
+                android:gravity="center"
+                android:textStyle="bold">
 
             </TextView>
 
@@ -215,7 +227,10 @@
                 android:layout_height="50dp"
                 android:layout_marginLeft="200dp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/custom_button">
+                android:textColor="@color/orange"
+                android:textSize="26dp"
+                android:gravity="center"
+                android:textStyle="bold">
 
             </TextView>
 
@@ -252,7 +267,10 @@
                 android:layout_height="50dp"
                 android:layout_marginLeft="200dp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/custom_button">
+                android:textColor="@color/orange"
+                android:textSize="26dp"
+                android:gravity="center"
+                android:textStyle="bold">
 
             </TextView>
 
