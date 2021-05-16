@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VotingApp">
-        <activity android:name=".Validate_signout"></activity>
+        <activity android:name=".Vote_count"></activity>
+        <activity android:name=".Last_page" />
+        <activity android:name=".Validate_signout" />
         <activity android:name=".Vote_poling" />
         <activity android:name=".Fingerprint_validation" />
         <activity android:name=".Aadhar_validation" />

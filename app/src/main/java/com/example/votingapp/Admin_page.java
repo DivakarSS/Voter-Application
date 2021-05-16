@@ -37,6 +37,13 @@ public class Admin_page extends AppCompatActivity {
                 startActivity(log);
             }
         });
+        count.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent log = new Intent(Admin_page.this,Vote_count.class);
+                startActivity(log);
+            }
+        });
         sign_out.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,5 +54,7 @@ public class Admin_page extends AppCompatActivity {
                 finish();
             }
         });
+
+
     }
 }
