@@ -57,4 +57,9 @@ public class Admin_page extends AppCompatActivity {
 
 
     }
+    @Override
+    public void onBackPressed()
+    {
+
+    }
 }

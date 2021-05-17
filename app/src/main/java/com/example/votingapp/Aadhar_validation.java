@@ -46,7 +46,11 @@ public class Aadhar_validation extends AppCompatActivity {
 
 
     }
+    @Override
+    public void onBackPressed()
+    {
 
+    }
     private boolean validateAadhar(){
         String aadhar = aadhar_layout.getEditText().getText().toString().trim();
 

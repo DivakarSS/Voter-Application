@@ -22,7 +22,7 @@
 
         app:endIconMode="clear_text"
         app:startIconDrawable="@drawable/ic_baseline_person_24"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/purple"
         app:helperTextTextColor="@color/red"
         app:counterEnabled="true"
         app:counterMaxLength="20"
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:maxLength="20"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -57,8 +57,8 @@
         app:errorIconDrawable="@drawable/ic_baseline_error_24"
         android:hint="Aadhar"
         app:counterEnabled="true"
-        app:counterMaxLength="15"
-        android:textColorHint="@color/white"
+        app:counterMaxLength="14"
+        android:textColorHint="@color/purple"
         app:startIconDrawable="@drawable/ic_baseline_person_pin_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,7 +68,7 @@
             android:id="@+id/aadhar_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:maxLines="1"
             android:maxLength="14"
             />
@@ -86,10 +86,12 @@
         android:layout_marginBottom="78dp"
         app:endIconMode="custom"
         app:errorEnabled="true"
-        android:textColor="@color/white"
+        android:textColor="@color/purple"
         app:errorIconDrawable="@drawable/ic_baseline_error_24"
         android:hint="Voter Id"
-        android:textColorHint="@color/white"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        android:textColorHint="@color/purple"
         app:startIconDrawable="@drawable/ic_baseline_person_pin_24"
 
         app:layout_constraintEnd_toEndOf="parent"
@@ -102,7 +104,7 @@
             android:layout_height="wrap_content"
             android:inputType="text"
             android:maxLines="1"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:maxLength="10"
             />
     </com.google.android.material.textfield.TextInputLayout>
@@ -123,7 +125,9 @@
         app:errorEnabled="true"
         app:errorIconDrawable="@drawable/ic_baseline_error_24"
         android:hint="D.O.B"
-        android:textColorHint="@color/white"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        android:textColorHint="@color/purple"
         app:startIconDrawable="@drawable/ic_baseline_calendar_today_24"
 
         app:layout_constraintEnd_toEndOf="parent"
@@ -134,8 +138,9 @@
             android:id="@+id/dob_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:inputType="date"
+            android:maxLength="10"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -154,9 +159,11 @@
         app:errorEnabled="true"
         app:errorIconDrawable="@drawable/ic_baseline_error_24"
         android:hint="Phone"
-        android:textColorHint="@color/white"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        android:textColorHint="@color/purple"
         app:startIconDrawable="@drawable/ic_baseline_phone_24"
-
+        app:prefixText="+91"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dob_layout">
@@ -166,7 +173,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="phone"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:maxLength="10"
             />
     </com.google.android.material.textfield.TextInputLayout>
@@ -186,7 +193,7 @@
         app:errorEnabled="true"
         app:errorIconDrawable="@drawable/ic_baseline_error_24"
         android:hint="Address"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/purple"
         app:startIconDrawable="@drawable/ic_baseline_perm_contact_calendar_24"
 
         app:layout_constraintEnd_toEndOf="parent"
@@ -197,7 +204,7 @@
             android:id="@+id/address_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:inputType="textPostalAddress"
 
             />

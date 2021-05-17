@@ -54,7 +54,7 @@ public class Home extends AppCompatActivity {
         String checkbox = preferences.getString("remember","");
         if(checkbox.equals("true"))
         {
-            Intent intent = new Intent(Home.this,Votebuzzer.class );
+            Intent intent = new Intent(Home.this,Dissable.class );
             SharedPreferences sharedPreferences = getSharedPreferences("remember",MODE_PRIVATE);
 
 

@@ -16,10 +16,15 @@ public class Last_page extends AppCompatActivity {
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run(){
-                Intent homeIntent = new Intent(Last_page.this, Votebuzzer.class);
+                Intent homeIntent = new Intent(Last_page.this, Dissable.class);
                 startActivity(homeIntent);
                 finish();
             }
         },SPLASH_TIME_OUT);
+    }
+    @Override
+    public void onBackPressed()
+    {
+
     }
 }

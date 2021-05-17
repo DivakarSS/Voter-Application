@@ -46,6 +46,7 @@ public class Fingerprint_validation extends AppCompatActivity {
                break;
        }
 
+
        Executor executor = ContextCompat.getMainExecutor(this);
 
         BiometricPrompt biometricPrompt = new BiometricPrompt(Fingerprint_validation.this, executor, new BiometricPrompt.AuthenticationCallback() {
@@ -83,5 +84,10 @@ public class Fingerprint_validation extends AppCompatActivity {
                 biometricPrompt.authenticate(promptInfo);
             }
         });
+    }
+    @Override
+    public void onBackPressed()
+    {
+
     }
 }
