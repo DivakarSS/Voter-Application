@@ -66,6 +66,7 @@ public class Vote_poling extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull  Task<Void> task) {
                         if(task.isSuccessful()){
+                            Toast.makeText(Vote_poling.this, "You voted for CSE...", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(Vote_poling.this,Last_page.class);
                             startActivity(intent);
                         }
@@ -90,6 +91,7 @@ public class Vote_poling extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if(task.isSuccessful()){
+                            Toast.makeText(Vote_poling.this, "You voted for EEE...", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(Vote_poling.this,Last_page.class);
                             startActivity(intent);
                         }
@@ -114,6 +116,7 @@ public class Vote_poling extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull  Task<Void> task) {
                         if(task.isSuccessful()){
+                            Toast.makeText(Vote_poling.this, "You voted for IT...", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(Vote_poling.this,Last_page.class);
                             startActivity(intent);
                         }
@@ -137,6 +140,7 @@ public class Vote_poling extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if(task.isSuccessful()){
+                            Toast.makeText(Vote_poling.this, "You voted for MECH...", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(Vote_poling.this,Last_page.class);
                             startActivity(intent);
                         }
@@ -161,6 +165,7 @@ public class Vote_poling extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if(task.isSuccessful()){
+                            Toast.makeText(Vote_poling.this, "You voted for CIVIL...", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(Vote_poling.this,Last_page.class);
                             startActivity(intent);
                         }
@@ -185,6 +190,7 @@ public class Vote_poling extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if(task.isSuccessful()){
+                            Toast.makeText(Vote_poling.this, "You voted for ECE...", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(Vote_poling.this,Last_page.class);
                             startActivity(intent);
                         }

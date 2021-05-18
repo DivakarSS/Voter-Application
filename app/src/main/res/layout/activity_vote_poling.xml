@@ -35,6 +35,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
         app:layout_constraintVertical_bias="0.0">
+        <TextView
+            android:layout_width="342dp"
+            android:layout_height="40dp"
+            android:text="you want to put vote within 30 seconds."
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:textColor="@color/orange"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView1"
